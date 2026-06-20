@@ -65,3 +65,29 @@ When a user submits the profile form, the servlet captures the data, wraps it in
     6. Clean and build the project.
     7. Deploy and run the project on the application server (e.g. GlassFish).
     8. Open index.html in the browser to get started.
+
+6. SCREENSHOTS
+
+📸 6.1 Landing Page
+<img width="1863" height="879" alt="image" src="https://github.com/user-attachments/assets/dff9ba91-5065-489b-be91-04d2755b5f48" />
+
+
+📸 6.2 Profile Form
+<img width="1862" height="881" alt="image" src="https://github.com/user-attachments/assets/1d0c74a2-68a1-4718-95d0-0d1a5ea4f624" />
+
+
+📸 6.3 Profile Saved
+<img width="1860" height="878" alt="image" src="https://github.com/user-attachments/assets/6a057f3e-ebc3-46da-922d-ef400d87f6d7" />
+
+
+📸 6.4 View All Profiles
+<img width="1839" height="879" alt="image" src="https://github.com/user-attachments/assets/f9b25a97-f53a-4cff-bed6-ff6b1e4585e7" />
+
+
+📸 6.5 Search Results
+<img width="1856" height="878" alt="image" src="https://github.com/user-attachments/assets/ef2259ce-5549-4fd6-98f7-2d2624d6153e" />
+
+
+📸 6.6 Edit Profile
+<img width="1863" height="880" alt="image" src="https://github.com/user-attachments/assets/15387d32-dff1-4110-aad7-64643084c17a" />
+
