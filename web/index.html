@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Management System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box; margin: 0; padding: 0;
+            }
+
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                font-family: Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                min-height: 100vh;
+                margin: 0;
+            }
+
+            .left-panel {
+                flex: 1;
+                background: white;
+                display: flex;
+                align-items: center;
+                padding: 80px;
+            }
+
+            .right-panel {
+                flex: 1;
+                background: mistyrose;
+            }
+
+            .content {
+                max-width: 600px;
+            }
+
+            .content h1 {
+                color: #2C2C2A;
+                font-size: 72px;
+                font-weight: 700;
+                line-height: 1.08;
+                margin-bottom: 22px;
+                letter-spacing: -1px;
+            }
+
+            .content p {
+                color: dimgray;
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 44px;
+            }
+
+            .btn-row {
+                display: flex;
+                gap: 14px;
+            }
+
+            .btn-start {
+                background: palevioletred;
+                color: white;
+                text-decoration: none;
+                padding: 16px 30px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                transition: opacity 0.3s;
+            }
+
+            .btn-start:hover {
+                opacity: 0.9;
+            }
+
+            .btn-view {
+                background: white;
+                color: palevioletred;
+                border: 2px solid palevioletred;
+                text-decoration: none;
+                padding: 14px 30px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                transition: all 0.2s;
+            }
+
+            .btn-view:hover {
+                background: palevioletred;
+                color: white;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    flex-direction: column;
+                }
+                .right-panel {
+                    display: none;
+                }
+                .left-panel {
+                    padding: 50px 32px;
+                }
+                .content h1 {
+                    font-size: 42px;
+                }
+                .btn-row {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="left-panel">
+            <div class="content">
+                <h1>Profile Management System</h1>
+                <p>Manage student profiles with ease.</p>
+                <div class="btn-row">
+                    <a href="profileForm.html" class="btn-start">Get Started &#8594;</a>
+                    <a href="ProfileServlet?action=view" class="btn-view">View All Profiles</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel"></div>
+    </body>
+</html>

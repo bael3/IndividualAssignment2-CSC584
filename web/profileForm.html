@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * { 
+                box-sizing: border-box; margin: 0; padding: 0; 
+            }
+            
+            body {
+                font-family: Tahoma,Geneva Verdana, sans-serif;
+                background: mistyrose;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 20px;
+               
+            }
+            
+            .page-container {
+               max-width: 1000px;
+               margin: 0 auto;
+               width: 100%;
+            }
+
+            .nav {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+                justify-content: flex-end;
+            }
+            .nav a {
+                background: white;
+                color: palevioletred;
+                border: 2px solid palevioletred;
+                padding: 8px 16px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 600;
+                transition: all 0.2s;
+            }
+            .nav a:hover {
+                background: palevioletred;
+                color: white;
+            }
+            
+            .card {
+               background: white;
+               border-radius: 16px;
+               padding: 40px;
+               width: 100%;
+               box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            }
+
+             .card-header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .icon {
+               font-size: 50px;
+               margin-bottom: 10px;
+           }
+            
+             .card-header h1 {
+                color: palevioletred;
+                font-size: 26px;
+                margin: 0;
+            }
+             .card-header p {
+                color: dimgray;
+                font-size: 14px;
+            }
+            
+            .form-group {
+            margin-bottom: 18px;
+            }
+            
+            .form-group label {
+                display: block;
+                font-weight: 600;
+                color: darkslategrey;
+                margin-bottom: 6px;
+                font-size: 14px;
+            }
+            .form-group { 
+                margin-bottom: 18px; 
+            }
+ 
+            .form-group label 
+            {
+            display: block;
+            font-weight: 600;
+            color: darkslategrey;
+            margin-bottom: 6px;
+            font-size: 14px;
+            }
+            
+            .form-group input[type=text],
+            .form-group input[type=email],
+            .form-group textarea {
+                width: 100%;
+                padding: 15px 18px;
+                border: 2px solid lightgrey;
+                border-radius: 8px;
+                font-size: 16px;
+                transition: border-color 0.3s;
+                font-family: Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            .form-group input:focus,
+            .form-group textarea:focus {
+                border-color: pink;
+                outline: none;
+            }
+        
+            .form-group textarea {
+                height: 100px;
+                resize: vertical;
+            }
+            
+            .btn-submit {
+                 width: 100%;
+                 padding: 14px;
+                 background: palevioletred;
+                 color: white;
+                 border: none;
+                 border-radius: 8px;
+                 font-size: 16px;
+                 font-weight: bold;
+                 cursor: pointer;
+                 margin-top: 10px;
+                 transition: opacity 0.3s;
+        }
+            .btn-submit:hover {
+                opacity: 0.9; }
+            
+            .home-float {
+           position: fixed;
+           left: 24px;
+           bottom: 24px;
+           display: inline-flex;
+           align-items: center;
+           gap: 8px;
+           background: palevioletred;
+           color: white;
+           padding: 12px 20px;
+           border-radius: 8px;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 14px;
+           box-shadow: 0 8px 20px rgba(219,112,147,0.4);
+           transition: opacity 0.2s, transform 0.2s;
+           z-index: 999;
+        }
+        .home-float:hover {
+           opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        </style>
+    
+    </head>
+    <body>
+        <div class="page-container">
+        <div class="nav">
+            <a href="ProfileServlet?action=view">&#128101; View All Profiles</a>
+        </div>
+        <div class="card">
+             <div class="card-header">
+                 <div style="font-size:50px;">&#128100;</div>
+            <h1>My Personal Profile</h1>
+    </div>
+             
+            <form action="ProfileServlet?action=save" method="post">
+                 
+                 <div class="form-group">
+                <label>&#128100; Full Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+
+                 <div class="form-group">
+                <label>&#127988; Student ID</label>
+                <input type="text" name="studentID" placeholder="e.g. 2023123456" required>
+            </div>
+
+                 <div class="form-group">
+                <label>&#127979; Programme</label>
+                <input type="text" name="programme" placeholder="e.g. CDCS266" required>
+            </div>
+
+                 <div class="form-group">
+                <label>&#128140; Email</label>
+                <input type="email" name="email" placeholder="studentid@student.uitm.edu.my" required>
+            </div>
+
+                 <div class="form-group">
+                <label>&#128221; Hobbies</label>
+                <input type="text" name="hobbies" placeholder="reading, gaming, coding, travelling, etc" required>
+            </div> 
+                
+                 <div class="form-group">
+                <label>Short Self-Introduction</label>
+                <textarea name="introduction" placeholder="Tell us a little about yourself..."></textarea>
+            </div>
+              
+            <button type="submit" class="btn-submit">Submit Profile</button>
+            
+        </form>
+            <a href="index.html" class="home-float">&#8592; Home</a>
+    </div>  
+    </div>
+    </body>
+</html>
