@@ -48,20 +48,20 @@ When a user submits the profile form, the servlet captures the data, wraps it in
 
 4. TECHNOLOGY STACK
 
-☕ Java Servlets, JSP, and JavaBeans
-🔌 JDBC
-🗄️ Apache Derby (Java DB)
-🎨 HTML5 and CSS3
-🛠️ NetBeans IDE
+    ☕ Java Servlets, JSP, and JavaBeans
+    🔌 JDBC
+    🗄️ Apache Derby (Java DB)
+    🎨 HTML5 and CSS3
+    🛠️ NetBeans IDE
 
 
 5. HOW TO RUN
 
-1. Clone this repository.
-2. Open the project in NetBeans.
-3. Start the Java DB (Derby) Network Server.
-4. Run database.sql to create the StudentProfilesDB database and the Profile table.
-5. Check that the connection settings in DBConnection.java match your local database credentials.
-6. Clean and build the project.
-7. Deploy and run the project on the application server (e.g. GlassFish).
-8. Open index.html in the browser to get started.
+    1. Clone this repository.
+    2. Open the project in NetBeans.
+    3. Start the Java DB (Derby) Network Server.
+    4. Run database.sql to create the StudentProfilesDB database and the Profile table.
+    5. Check that the connection settings in DBConnection.java match your local database credentials.
+    6. Clean and build the project.
+    7. Deploy and run the project on the application server (e.g. GlassFish).
+    8. Open index.html in the browser to get started.
