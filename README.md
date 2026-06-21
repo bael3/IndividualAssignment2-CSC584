@@ -22,13 +22,13 @@ The application demonstrates the integration of HTML Forms, Java Servlets, JavaB
     JSP Pages          - View
     ProfileServlet     - Controller
 
-When a user submits the profile form, the servlet captures the data, wraps it in a ProfileBean object, and saves it to the Profile table in the StudentProfilesDB database using JDBC. Users can then view, search, edit, and delete profile records through a consistent, styled interface.
+When a user submits the profile form, the servlet captures the data, wraps it in a ProfileBean object, and saves it to the Profile table in the StudentProfilesDB database using JDBC. Users can then view, search, edit, and delete profile records through a styled interface.
 
 
 3. IMPLEMENTED FEATURES
 
 ✅ 1. Create Profile
-   Submit student details through an HTML form. Data is validated and saved to the database using a JDBC insert statement.
+   Submit student details through a HTML form. Data is validated and saved to the database using a JDBC insert statement.
 
 ✅ 2. View All Profiles
    Displays all saved profile records in a clean card and table layout.
@@ -43,7 +43,7 @@ When a user submits the profile form, the servlet captures the data, wraps it in
    Remove a profile record from the database.
 
 ✅ 6. Consistent UI
-   Custom CSS styling using a pink and mistyrose theme across all pages, including a dedicated landing page and a floating home navigation button.
+   Custom CSS styling using a mistyrose theme across all pages, including a dedicated landing page and a floating home navigation button.
 
 
 4. TECHNOLOGY STACK
